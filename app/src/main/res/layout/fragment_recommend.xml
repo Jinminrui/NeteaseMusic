@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.RecommendFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:elevation="5dp"/>
+
+        <TextView
+            android:id="@+id/title_rec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/banner"
+            android:text="热 门 歌 单 推 荐"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <ProgressBar
+            android:id="@+id/listload"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/title_rec"
+            android:layout_centerHorizontal="true"/>
+
+        <com.jmr.nuist.neteasemusic.extend.LoadListView
+            android:id="@+id/playlistview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_rec"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            android:cacheColorHint="#00000000"
+            android:dividerHeight="20dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:divider="#fff"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:layoutAnimation="@anim/anim_listview_item"/>
+    </RelativeLayout>
+
+</FrameLayout>

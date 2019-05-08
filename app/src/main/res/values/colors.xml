@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff4d4f</color>
+    <color name="colorPrimaryDark">#ff4d4f</color>
+    <color name="colorAccent">#ff4d4f</color>
+    <color name="colorBackground">#ffffff</color>
+
+    <drawable name="btnPressed">#A52A2A</drawable>
+</resources>

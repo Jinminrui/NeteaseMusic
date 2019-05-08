@@ -1,0 +1,10 @@
+媒体播放
+MediaPlayer类可以用来播放音频
+状态
+1、Idle
+2、End
+3、Initialized
+4、Prepared
+5、Started
+6、Paused
+7、Stop
